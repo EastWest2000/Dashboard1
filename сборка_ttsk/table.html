@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDashboard</title>
+    <link rel="stylesheet" href="style_table/styletable.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- обертка всего контента -->
+    <div class="wrapper">
+        <!-- сменяемое боковое хедер-меню в верхнее при адаптиве -->
+        <header class="header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo d-flex align-items-center">
+                    <img src="./img/logo.png" alt="Logo" class="logo-img">
+                    <h1 class="header__title">Dashboard</h1>
+                    <span class="sidebar__version">v.01</span>
+                </div>
+                <div class="sidebar__profile profile">
+                    <img class="profile__avatar" src="./img/Ellipse 8.png" alt="Evano">
+                    <div class="profile__info">
+                        <span class="profile__name">Evano</span>
+                        <span class="profile__role">Project Manager</span>
+                    </div>
+                </div>
+                <!-- меню бургер в адаптиве -->
+                <div id="menu-btn" class="menu-icon">
+                    <img src="./img/menu.png">
+                </div>
+            </div>
+        </header>
+        <!-- создание бокового хедер-меню -->
+        <section class="sidebar">
+            <div class="sidebar__header">
+                <div class="sidebar__logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="">
+                        <h1 class="sidebar__title">Dashboard</h1>
+                    </a>
+                    <span class="sidebar__version">v.01</span>
+                </div>
+            </div>
+            <!-- навигация -->
+            <nav class="sidebar__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/key-square.png" alt="">
+                                <span class="menu__text">Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/3d-square 1.png" alt="">
+                                <span class="menu__text">Product</span>
+                            </div>
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--active">
+                        <a href="table.html" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/user-square 2.png" alt="">
+                                <span class="menu__text">Customers</span>
+                            </div>
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/wallet-money 2.png" alt="">
+                                <span class="menu__text">Income</span>
+                            </div> 
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/discount-shape 1.png" alt="">
+                                <span class="menu__text">Promote</span>
+                            </div>
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/message-question 1.png" alt="">
+                                <span class="menu__text">Help</span>
+                            </div>
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar__profile profile">
+                <img class="profile__avatar" src="./img/Ellipse 8.png" alt="Evano">
+                <div class="profile__info">
+                    <span class="profile__name">Evano</span>
+                    <span class="profile__role">Project Manager</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- таблица -->
+        <div class="main-container">
+            <div class="main-container__header">
+                <h2 class="main-container__greeting">Hello Evano 👋,</h2>
+            </div>
+            <div class="main-container__card card">
+                <div class="card__header">
+                    <h3 class="card__title">All Customers
+                        <p>Active Members</p>
+                    </h3>
+                    <div class="main-container__search">
+                        <img src="./img/search 1.png" alt="">
+                        <input type="text" class="search__input" placeholder="Search">
+                    </div>
+                </div>
+                <div class="card_table_container">
+                    <table class="card__table table">
+                        <thead class="table__head">
+                            <tr class="table__head-row table__head-item">
+                                <th class="table__header">Customer Name</th>
+                                <th class="table__header">Company</th>
+                                <th class="table__header">Phone Number</th>
+                                <th class="table__header">Email</th>
+                                <th class="table__header item-country">Country</th>
+                                <th class="table__header item-status">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+
+                            <tr class="table__row">
+                                <td class="table__cell">Jane Cooper</td>
+                                <td class="table__cell">Microsoft</td>
+                                <td class="table__cell">(225) 555-0118</td>
+                                <td class="table__cell">jane@microsoft.com</td>
+                                <td class="table__cell">United States</td>
+                                <td class="table__cell"><a href="#" class="btn-active">Active</a></td>
+                            </tr>
+
+                            <tr class="table__row">
+                                <td class="table__cell">Floyd Miles</td>
+                                <td class="table__cell">Yahoo</td>
+                                <td class="table__cell">(205) 555-0100</td>
+                                <td class="table__cell">floyd@yahoo.com</td>
+                                <td class="table__cell">Kiribati</td>
+                                <td class="table__cell"><a href="#"
+                                class="btn-inactive">Inactive</a></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Ronald Richards</td>
+                                <td class="table__cell">Adobe</td>
+                                <td class="table__cell">(302) 555-0107</td>
+                                <td class="table__cell">ronald@adobe.com</td>
+                                <td class="table__cell">Israel</td>
+                                <td class="table__cell"><a href="#"
+                                    class="btn-inactive">Inactive</a></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Marvin McKinney</td>
+                                <td class="table__cell">Tesla</td>
+                                <td class="table__cell">(252) 555-0126</td>
+                                <td class="table__cell">marvin@tesla.com</td>
+                                <td class="table__cell">Iran</td>
+                                <td class="table__cell"><a href="#" class="btn-active">Active</a></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Jerome Bell</td>
+                                <td class="table__cell">Google</td>
+                                <td class="table__cell">(629) 555-0129</td>
+                                <td class="table__cell">jerome@google.com</td>
+                                <td class="table__cell">Reunion</td>
+                                <td class="table__cell"><a href="#" class="btn-active">Active</a></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Kathryn Murphy</td>
+                                <td class="table__cell">Microsoft</td>
+                                <td class="table__cell">(406) 555-0120</td>
+                                <td class="table__cell">kathryn@microsoft.com</td>
+                                <td class="table__cell">Curacao</td>
+                                <td class="table__cell"><a href="#" class="btn-active">Active</a></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Jacob Jones</td>
+                                <td class="table__cell">Yahoo</td>
+                                <td class="table__cell">(208) 555-0112</td>
+                                <td class="table__cell">jacob@yahoo.com</td>
+                                <td class="table__cell">Brasil</td>
+                                <td class="table__cell"><a href="#" class="btn-active">Active</a></td>
+                            </tr>
+                            <tr class="table__row">
+                                <td class="table__cell">Kristin Watson</td>
+                                <td class="table__cell">Facebook</td>
+                                <td class="table__cell">(704) 555-0127</td>
+                                <td class="table__cell">kristin@facebook.com</td>
+                                <td class="table__cell">Aland Islands</td>
+                                <td class="table__cell"><a href="#"
+                                    class="btn-inactive">Inactive</a></td>
+                            </tr>
+                            <!-- Add other rows similarly -->
+                        </tbody>
+                    </table>
+                </div>
+                
+        
+                <div class="card__footer">
+                    <div class="card__footer-info">Showing data 1 to 8 of 256K entries</div>
+                    <div class="card__pagination pagination">
+                        <a href="#" class="pagination__page pagination__arrow-left">&lt;</a>
+                        <a href="#" class="pagination__page">1</a>
+                        <a href="#" class="pagination__page">2</a>
+                        <a href="#" class="pagination__page">3</a>
+                        <a href="#" class="pagination__page">4</a>
+                        <a href="#" class="pagination__page item-page">...</a>
+                        <a href="#" class="pagination__page item-last">40</a>
+                        <a href="#" class="pagination__page pagination__arrow-right">&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение файлов с Javascript -->
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

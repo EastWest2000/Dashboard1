@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LDashboard</title>
+    <link rel="stylesheet" href="style_table/styletable.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap" rel="stylesheet">
+
+<body>
+    <div class="wrapper">
+        <!-- сменяемое боковое хедер-меню в верхнее при адаптиве -->
+        <header class="header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo d-flex align-items-center">
+                    <img src="./img/logo.png" alt="Logo" class="logo-img">
+                    <h1 class="header__title">Dashboard</h1>
+                    <span class="sidebar__version">v.01</span>
+                </div>
+                <div class="sidebar__profile profile">
+                    <img class="profile__avatar" src="./img/Ellipse 8.png" alt="Evano">
+                    <div class="profile__info">
+                        <span class="profile__name">Evano</span>
+                        <span class="profile__role">Project Manager</span>
+                    </div>
+                </div>
+                <!--меню бургер в адаптиве-->
+                <div class="menu-icon">
+                    <img src="./img/menu.png">
+                </div>
+            </div>
+        </header>
+    <!-- создание бокового хедер-меню -->
+        <section class="sidebar">
+            <div class="sidebar__header">
+                <div class="sidebar__logo">
+                    <a href="index.html">
+                        <img src="./img/logo.png" alt="">
+                        <h1 class="sidebar__title">Dashboard</h1>
+                    </a>
+                    <span class="sidebar__version">v.01</span>
+                </div>
+            </div>
+            <!-- навигация -->
+            <nav class="sidebar__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/key-square.png" alt="">
+                                <span class="menu__text">Dashboard</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/3d-square 1.png" alt="">
+                                <span class="menu__text">Product</span>
+                            </div>
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu__item menu__item--active">
+                        <a href="table.html" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/user-square 2.png" alt="">
+                                <span class="menu__text">Customers</span>
+                            </div>
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/wallet-money 2.png" alt="">
+                                <span class="menu__text">Income</span>
+                            </div> 
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/discount-shape 1.png" alt="">
+                                <span class="menu__text">Promote</span>
+                            </div>
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">
+                            <div class="menu__item-item">
+                                <img src="./img/message-question 1.png" alt="">
+                                <span class="menu__text">Help</span>
+                            </div>
+                            <img src="./img/chevron-right 2.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- аватар профиля -->
+            <div class="sidebar__profile profile">
+                <img class="profile__avatar" src="./img/Ellipse 8.png" alt="Evano">
+                <div class="profile__info">
+                    <span class="profile__name">Evano</span>
+                    <span class="profile__role">Project Manager</span>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+    
+        <!-- Подключение файлов с Javascript -->
+
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
